@@ -7,7 +7,7 @@ import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite';
 // it'll call the api properly for config and backend calls (consider make env var for API)
 // https://vitejs.dev/config/server-options.html#server-proxy
 const proxyObject = {
-  target: 'http://localhost:8080',
+  target: 'http://dev3.1pass.org:8080',
   ws: true,
   changeOrigin: true,
 };

@@ -39,7 +39,7 @@ start the API from `services/tenant-ui/`
 npm run start
 ```
 
-This starts up the API and builds the FE and serves the frontend from [here](localhost:8080)
+This starts up the API and builds the FE and serves the frontend from [here](dev3.1pass.org:8080)
 
 ## Developing
 
@@ -133,7 +133,7 @@ To enable this set the following environment variables before starting the `tena
 - `SERVER_SMTP_SERVER=maildev`
 - `SERVER_SMTP_PORT=1025`
 
-To view the emails being sent open http://localhost:1080/ in your web browser
+To view the emails being sent open http://dev3.1pass.org:1080/ in your web browser
 
 By default this is already configured in the docker-compose file. For
 local use you will need to start `maildev` manually.

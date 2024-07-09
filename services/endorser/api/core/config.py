@@ -25,7 +25,7 @@ class GlobalConfig(BaseSettings):
 
     # the following defaults match up with default values in scripts/.env.example
     # these MUST be all set in non-local environments.
-    PSQL_HOST: str = os.environ.get("ENDORSER_POSTGRESQL_HOST", "localhost")
+    PSQL_HOST: str = os.environ.get("ENDORSER_POSTGRESQL_HOST", "dev3.1pass.org")
     PSQL_PORT: int = os.environ.get("ENDORSER_POSTGRESQL_PORT", 5432)
     PSQL_DB: str = os.environ.get("ENDORSER_POSTGRESQL_DB", "traction")
 
@@ -47,7 +47,7 @@ class GlobalConfig(BaseSettings):
     # fmt: on
 
     ACAPY_ADMIN_URL: str = os.environ.get(
-        "ENDORSER_ACAPY_ADMIN_URL", "http://localhost:9031"
+        "ENDORSER_ACAPY_ADMIN_URL", "http://dev3.1pass.org:9031"
     )
     ACAPY_ADMIN_URL_API_KEY: str = os.environ.get(
         "ENDORSER_ACAPY_ADMIN_URL_API_KEY", "change-me"

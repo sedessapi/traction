@@ -1,6 +1,6 @@
 {
   "frontend": {
-    "tenantProxyPath": "http://localhost:8032",
+    "tenantProxyPath": "http://dev3.1pass.org:8032",
     "apiPath": "api/",
     "basePath": "/",
     "showDeveloper": true,
@@ -53,7 +53,7 @@
     "logLevel": "http",
     "port": "8080",
     "staticFiles": "../../frontend/dist",
-    "tractionUrl": "http://localhost:5100",
+    "tractionUrl": "http://dev3.1pass.org:5100",
     "oidc": {
       "jwksUri": "https://dev.loginproxy.gov.bc.ca/auth/realms/digitaltrust-citz/protocol/openid-connect/certs",
       "realm": "digitaltrust-citz",

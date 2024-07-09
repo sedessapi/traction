@@ -1,6 +1,6 @@
 import os
 
-WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "http://localhost:8088/webhook")
+WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "http://dev3.1pass.org:8088/webhook")
 
 # this is the acapy api we call...
 PROXY_URL = os.environ.get("SERVER_TRACTION_URL")

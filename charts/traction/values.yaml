@@ -153,10 +153,10 @@ acapy:
   ## @section Wallet Storage configuration
   ##  Specifies the storage configuration to use for the wallet.
   ##  This is required if you are for using 'postgres_storage' wallet 'storage type.
-  ##  For example, '{"url":"localhost:5432", "wallet_scheme":"MultiWalletSingleTable"}'.
+  ##  For example, '{"url":"dev3.1pass.org:5432", "wallet_scheme":"MultiWalletSingleTable"}'.
   ##  This configuration maps to the indy sdk postgres plugin (PostgresConfig).
   ##
-  ## @param acapy.walletStorageConfig.json Raw json, overrides all other values including postgres subchart values. e.g.: '{"url":"localhost:5432", "max_connections":"10", "wallet_scheme":"DatabasePerWallet"}'
+  ## @param acapy.walletStorageConfig.json Raw json, overrides all other values including postgres subchart values. e.g.: '{"url":"dev3.1pass.org:5432", "max_connections":"10", "wallet_scheme":"DatabasePerWallet"}'
   ## @param acapy.walletStorageConfig.url Database url. Overrides all other values including postgres subchart values.
   ## @param acapy.walletStorageConfig.max_connections Client max connections, defaults to 10.
   ## @param acapy.walletStorageConfig.wallet_scheme Wallet scheme.

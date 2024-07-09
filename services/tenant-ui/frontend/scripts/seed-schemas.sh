@@ -7,7 +7,7 @@ if [ $# -eq 0 ]; then
 fi
 
 test_url="https://traction-api-test.apps.silver.devops.gov.bc.ca/tenant/v1/governance/schema_templates"
-proxy_url="https://localhost:8080/api/traction/tenant/v1/governance/schema_templates"
+proxy_url="https://dev3.1pass.org:8080/api/traction/tenant/v1/governance/schema_templates"
 
 payload="
   {

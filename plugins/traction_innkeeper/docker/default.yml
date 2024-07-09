@@ -11,7 +11,7 @@ inbound-transport:
   - [ws, 0.0.0.0, 3002]
 outbound-transport: http
 endpoint:
-  - http://localhost:3000
+  - http://dev3.1pass.org:3000
 
 # plugins
 plugin:

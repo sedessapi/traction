@@ -33,7 +33,7 @@
       "name": "frontend - chrome",
       "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:5173/",
+      "url": "http://dev3.1pass.org:5173/",
       "webRoot": "${workspaceFolder}/frontend",
       "breakOnLoad": true,
       "sourceMapPathOverrides": {

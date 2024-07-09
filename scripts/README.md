@@ -56,9 +56,9 @@ The default configuration will stand up the following environment:
 
 ### Endpoints
 
-- [Tenant Proxy Swagger](http://localhost:8032/api/doc)
-- [Tenant UI - Innkeeper](http://localhost:5101/innkeeper)
-- [Tenant UI - Tenants](http://localhost:5101/)
+- [Tenant Proxy Swagger](http://dev3.1pass.org:8032/api/doc)
+- [Tenant UI - Innkeeper](http://dev3.1pass.org:5101/innkeeper)
+- [Tenant UI - Tenants](http://dev3.1pass.org:5101/)
 
 ### Credentials
 
@@ -169,13 +169,13 @@ You may find it easier to just leave tabs open instead of copying and saving the
 
 1. (Tenant) Make a reservation
 	1. open a new tab to act as a prospective tenant and make a reservation
-	2. navigate to [http://localhost:5101](http://localhost:5101)
+	2. navigate to [http://dev3.1pass.org:5101](http://dev3.1pass.org:5101)
 	3. Click on Create Request
 	4. Fill in request, remember the email address and set Tenant name to something unique.
 	5. Submit Request - copy the email address and Reservation ID.
 2. (Innkeeper) Approve the Reservation
 	1. open a new tab in a browser to perform innkeeper duties.
-	2. navigate to [http://localhost:5101/innkeeper](http://localhost:5101/innkeeper)
+	2. navigate to [http://dev3.1pass.org:5101/innkeeper](http://dev3.1pass.org:5101/innkeeper)
 	3. Sign-in with:
 		- Admin Name = `innkeeper`
 		- Admin Key = `change-me`
@@ -184,7 +184,7 @@ You may find it easier to just leave tabs open instead of copying and saving the
 	6. Copy the Reservation Password (*NOTE*: this is not happening in production, the reservation password will be delivered to the tenant by email or some other means)
 3. (Tenant) Check reservation status
 	1. open a new tab to act as a prospective tenant and check the reservation
-	2. navigate to [http://localhost:5101](http://localhost:5101)
+	2. navigate to [http://dev3.1pass.org:5101](http://dev3.1pass.org:5101)
 	3. Click on Check Status
 	4. enter the email address from above and the saved Reservation ID
 	5. Click Check Status and it should be approved.
@@ -193,22 +193,22 @@ You may find it easier to just leave tabs open instead of copying and saving the
 	8. Copy these down!
 4. (Tenant) Sign in
 	1. open new tab for the tenant
-	2. navigate to [http://localhost:5101](http://localhost:5101)
+	2. navigate to [http://dev3.1pass.org:5101](http://dev3.1pass.org:5101)
 	3. Enter the saved Wallet ID and Wallet Key
 
 You can use the wallet id and key to retrieve a token and use the Tenant API.
 
-1. Open new tab and navigate to [http://localhost:8032/api/doc](http://localhost:8032/api/doc)
-2. Scroll down to [POST multitenancy/wallet/{wallet_id}/token](http://localhost:8032/api/doc#/multitenancy/post_multitenancy_wallet__wallet_id__token)
+1. Open new tab and navigate to [http://dev3.1pass.org:8032/api/doc](http://dev3.1pass.org:8032/api/doc)
+2. Scroll down to [POST multitenancy/wallet/{wallet_id}/token](http://dev3.1pass.org:8032/api/doc#/multitenancy/post_multitenancy_wallet__wallet_id__token)
 3. Expand and click Try it out.
 4. Populate the body with your Wallet Key
 5. Enter your Wallet ID in the `wallet_id` field.
 6. Click Execute and check the response.
 7. Copy the value for `token` from the response.
-8. Scroll to the [top](http://localhost:8032/api/doc) (or click on a lock icon).
+8. Scroll to the [top](http://dev3.1pass.org:8032/api/doc) (or click on a lock icon).
 9. In the bottom `AuthorizationHeader (apiKey)` section, for the Value field, enter `Bearer <your token value>` and Authorize.
 10. You are now logged in as your tenant/wallet/agent.
-11. Scroll to [GET /tenant](http://localhost:8032/api/doc#/traction-tenant/get_tenant), expand, Try it out and Execute.
+11. Scroll to [GET /tenant](http://dev3.1pass.org:8032/api/doc#/traction-tenant/get_tenant), expand, Try it out and Execute.
 12. These are your tenant's details. Only you are authorized to fetch your tenant data.
 
 For Tenant Line of Business Integration, see more steps in the [tenant-lob demo](../services/tenant-lob/README.md) readme.

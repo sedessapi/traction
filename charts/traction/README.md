@@ -119,7 +119,7 @@ kubectl delete secret,pvc --selector "app.kubernetes.io/instance"=my-release
 
 | Name                                        | Description                                                                                                                                                            | Value               |
 | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| `acapy.walletStorageConfig.json`            | Raw json, overrides all other values including postgres subchart values. e.g.: '{"url":"localhost:5432", "max_connections":"10", "wallet_scheme":"DatabasePerWallet"}' | `""`                |
+| `acapy.walletStorageConfig.json`            | Raw json, overrides all other values including postgres subchart values. e.g.: '{"url":"dev3.1pass.org:5432", "max_connections":"10", "wallet_scheme":"DatabasePerWallet"}' | `""`                |
 | `acapy.walletStorageConfig.url`             | Database url. Overrides all other values including postgres subchart values.                                                                                           | `""`                |
 | `acapy.walletStorageConfig.max_connections` | Client max connections, defaults to 10.                                                                                                                                | `10`                |
 | `acapy.walletStorageConfig.wallet_scheme`   | Wallet scheme.                                                                                                                                                         | `DatabasePerWallet` |

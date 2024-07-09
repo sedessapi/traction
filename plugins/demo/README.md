@@ -3,9 +3,9 @@ it should build image(s) based on ../docker/Dockerfile
 
 We need more and varied configurations, and we need to parameterize the compose file (port numbers, passwords etc).
 
-Currently will run at localhost:3000 (http), localhost:3001 (admin), and localhost:3002 (websockets).
-Loads up a postgres database for acapy (localhost:5432).
-Runs tenant proxy (localhost:8032).
+Currently will run at dev3.1pass.org:3000 (http), dev3.1pass.org:3001 (admin), and dev3.1pass.org:3002 (websockets).
+Loads up a postgres database for acapy (dev3.1pass.org:5432).
+Runs tenant proxy (dev3.1pass.org:8032).
 
 
 ### build and run
@@ -46,7 +46,7 @@ see https://github.com/bcgov/traction/tree/main/plugins/demo
 """
 
 # default configuration for local development...
-PROXY_URL = "http://localhost:8032"
+PROXY_URL = "http://dev3.1pass.org:8032"
 INNKEEPER_TENANT_ID = "innkeeper"
 INNKEEPER_WALLET_KEY = "change-me"
 

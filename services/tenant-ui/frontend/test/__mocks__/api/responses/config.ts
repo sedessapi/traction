@@ -1,6 +1,6 @@
 const config = {
   frontend: {
-    tenantProxyPath: 'http://localhost:8032',
+    tenantProxyPath: 'http://dev3.1pass.org:8032',
     apiPath: 'api/',
     basePath: '/',
     showDeveloper: true,
@@ -34,7 +34,7 @@ const config = {
     version: 'default',
   },
   server: {
-    tractionUrl: 'http://localhost:5100',
+    tractionUrl: 'http://dev3.1pass.org:5100',
   },
 };
 

@@ -16,7 +16,7 @@ describe('configStore', () => {
   });
 
   afterAll(() => {
-    configResponse.setTenantProxyUrl('http://localhost:8080');
+    configResponse.setTenantProxyUrl('http://dev3.1pass.org:8080');
   });
 
   describe('Successful API calls', () => {
@@ -55,7 +55,7 @@ describe('configStore', () => {
     });
 
     test('proxyPath() returns the correct value', async () => {
-      configResponse.setTenantProxyUrl('http://localhost:8080');
+      configResponse.setTenantProxyUrl('http://dev3.1pass.org:8080');
       let config = await store.load();
       expect(store.proxyPath('/test')).toEqual(
         config.frontend.tenantProxyPath + '/test'
@@ -64,7 +64,7 @@ describe('configStore', () => {
         config.frontend.tenantProxyPath + '/test'
       );
 
-      configResponse.setTenantProxyUrl('http://localhost:8080/');
+      configResponse.setTenantProxyUrl('http://dev3.1pass.org:8080/');
       config = await store.load();
       expect(store.proxyPath('/test')).toEqual(
         config.frontend.tenantProxyPath + 'test'

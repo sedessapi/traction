@@ -10,9 +10,9 @@ A couple things about the Swagger docs though, it's old 2.0 Swagger spec (rather
 
 For example, on a local Docker deployment, can see the Swagger page at:
 
-`http://localhost:8031/api/doc`
+`http://dev3.1pass.org:8031/api/doc`
 
-and the swagger JSON file used to generate this interface can be downloaded from there (`http://localhost:8031/api/docs/swagger.json`).
+and the swagger JSON file used to generate this interface can be downloaded from there (`http://dev3.1pass.org:8031/api/docs/swagger.json`).
 
 For this workflow, the swagger file will just be used as a manual generation to auto-create types for the TenantUI. It will not:
 

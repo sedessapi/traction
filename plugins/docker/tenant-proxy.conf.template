@@ -1,7 +1,7 @@
 server {
     listen *:8080;
     listen [::]:8080;
-    server_name localhost;
+    server_name dev3.1pass.org;
 
     # set default headers
     proxy_set_header Host $host;
