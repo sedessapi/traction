@@ -1,13 +1,13 @@
 version: "3.9"
 services:
-  ngrok-traction-agent:
-    image: ngrok/ngrok
-    environment:
-      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
-      - TRACTION_ACAPY_HTTP_PORT=${TRACTION_ACAPY_HTTP_PORT}
-    ports:
-      - 4052:4040
-    command: http traction-agent:${TRACTION_ACAPY_HTTP_PORT} --log stdout
+  # ngrok-traction-agent:
+  #   image: ngrok/ngrok
+  #   environment:
+  #     - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+  #     - TRACTION_ACAPY_HTTP_PORT=${TRACTION_ACAPY_HTTP_PORT}
+  #   ports:
+  #     - 4052:4040
+  #   command: http traction-agent:${TRACTION_ACAPY_HTTP_PORT} --log stdout
 
   traction-acapy-image-builder:
     pull_policy: missing
@@ -31,7 +31,8 @@ services:
         condition: service_healthy
     environment:
       - TRACTION_ENV=${TRACTION_ENV}
-      - NGROK_NAME=ngrok-traction-agent
+      # - NGROK_NAME=ngrok-traction-agent
+      - ACAPY_ENDPOINT=${ACAPY_ENDPOINT}
       - TRACTION_ACAPY_HTTP_PORT=${TRACTION_ACAPY_HTTP_PORT}
       - TRACTION_ACAPY_ADMIN_PORT=${TRACTION_ACAPY_ADMIN_PORT}
       - TRACTION_ACAPY_WALLET_NAME=${TRACTION_ACAPY_WALLET_NAME}

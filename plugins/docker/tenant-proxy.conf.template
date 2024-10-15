@@ -13,17 +13,17 @@ server {
     # =============================================
     # Block list
     # =============================================
-    location /multitenancy {
-        deny all;
-    }
+    # location /multitenancy {
+    #    deny all;
+    # }
 
     location /shutdown {
         deny all;
     }
 
-    location /status {
-        deny all;
-    }
+    # location /status {
+    #    deny all;
+    # }
     
     # =============================================
     # Block list exceptions
